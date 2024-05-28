@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BDF0EB40-808A-4CBB-9786-D220D85C7360}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>БытСервис</RootNamespace>
+    <AssemblyName>БытСервис</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="a4DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>a4DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Glav1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Glav1.Designer.cs">
+      <DependentUpon>Glav1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M.Designer.cs">
+      <DependentUpon>M.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mast.Designer.cs">
+      <DependentUpon>Mast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NazMast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NazMast.Designer.cs">
+      <DependentUpon>NazMast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="O.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="O.Designer.cs">
+      <DependentUpon>O.cs</DependentUpon>
+    </Compile>
+    <Compile Include="otchet1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="otchet1.Designer.cs">
+      <DependentUpon>otchet1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="otchet2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="otchet2.Designer.cs">
+      <DependentUpon>otchet2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="otchet3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="otchet3.Designer.cs">
+      <DependentUpon>otchet3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtslegZaiv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtslegZaiv.Designer.cs">
+      <DependentUpon>OtslegZaiv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PodZaiavk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PodZaiavk.Designer.cs">
+      <DependentUpon>PodZaiavk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Z.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Z.Designer.cs">
+      <DependentUpon>Z.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZaiavkiM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZaiavkiM.Designer.cs">
+      <DependentUpon>ZaiavkiM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZaiavkiZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZaiavkiZ.Designer.cs">
+      <DependentUpon>ZaiavkiZ.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Glav1.resx">
+      <DependentUpon>Glav1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M.resx">
+      <DependentUpon>M.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mast.resx">
+      <DependentUpon>Mast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NazMast.resx">
+      <DependentUpon>NazMast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="O.resx">
+      <DependentUpon>O.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="otchet1.resx">
+      <DependentUpon>otchet1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="otchet2.resx">
+      <DependentUpon>otchet2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="otchet3.resx">
+      <DependentUpon>otchet3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtslegZaiv.resx">
+      <DependentUpon>OtslegZaiv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PodZaiavk.resx">
+      <DependentUpon>PodZaiavk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Z.resx">
+      <DependentUpon>Z.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZaiavkiM.resx">
+      <DependentUpon>ZaiavkiM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZaiavkiZ.resx">
+      <DependentUpon>ZaiavkiZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="a4DataSet.xsc">
+      <DependentUpon>a4DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="a4DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>a4DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="a4DataSet.xss">
+      <DependentUpon>a4DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
